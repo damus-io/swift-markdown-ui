@@ -2,7 +2,7 @@ import Foundation
 @_implementationOnly import cmark_gfm
 
 extension Array where Element == BlockNode {
-  init(markdown: String) {
+  public init(markdown: String) {
     let blocks = UnsafeNode.parseMarkdown(markdown) { document in
       document.children.compactMap(BlockNode.init(unsafeNode:))
     }
