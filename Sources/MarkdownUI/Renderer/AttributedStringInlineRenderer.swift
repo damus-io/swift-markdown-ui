@@ -90,7 +90,7 @@ private struct AttributedStringInlineRenderer {
       self.renderLineBreak()
       self.shouldSkipNextWhitespace = true
     default:
-      self.renderText(html)
+      break
     }
   }
 

@@ -13,7 +13,7 @@ extension Sequence where Element == InlineNode {
       case .code(let content):
         return [content]
       case .html(let content):
-        return [content]
+        return []
       default:
         return []
       }
